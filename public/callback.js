@@ -27,6 +27,13 @@ function getRepositories(username, callback) {
   }, 2000);
 }
 
+function getCommits(repo, callback) {
+  setTimeout(() => {
+    console.log('Calling GitHub API...');
+    callback(repo, ['commit']);
+  }, 2000);
+}
+
 // Solution to callback hell:
 
 console.log('Before');
